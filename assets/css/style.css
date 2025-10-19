@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    background-color: #f7fdfb;
+    min-height: 80vh;
+}
+
+.btn-danger {
+    background-color: #f15b42;
+    border: none;
+}
+
+.btn-success {
+    background-color: #3a965b;
+    border: none;
+}
+
+@media (min-width: 992px) {
+    .navbar .dropdown-menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        transform: translateY(10px);
+    }
+
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #183B56;       /* or any dark color that fits your theme */
+  border-radius: 50%;
+  padding: 8px;
+  filter: none;                   /* Remove default Bootstrap opacity if present */
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.5 0L4.5 1 2 4l2.5 3L5.5 7 3 4l2.5-4z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.5 0l1 1L6 4l-2.5 3-1-1L5 4 2.5 0z'/%3e%3c/svg%3e");
+}
